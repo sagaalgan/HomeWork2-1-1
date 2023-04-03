@@ -15,8 +15,7 @@ int main()
     file >> n;
     int k = std::stoi(n);
     int* N = new int[k];
-    int y = k;
-    while (y == k)
+    while (k == k)
     {
         for (int i = 0; i < k; i++)
         {
@@ -28,7 +27,6 @@ int main()
             N[i] = N[i + 1];
         }
         N[k - 1] = t;
-        y++;
     }
     std::string n1;
     file >> n1;
@@ -63,4 +61,5 @@ int main()
     delete[] M;
     file.close();
     out.close();
+
 }
